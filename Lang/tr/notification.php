@@ -8,9 +8,6 @@ return array(
     "new_reply"             => "Yeni Talep Cevabı",
     "new_reply_text"        => "Tarafından yeni bir yanıt gönderildi :name talep için #:item.",
 
-    "operator_login"        => "Giriş Yapan Operatör",
-    "operator_login_text"   => ":name operatör panelinde oturum açtı.",
-
     "failed_logins"         => "Operatör Girişi Başarısız Oldus",
     "new_comments"          => "Yeni Yorumlar",
 
@@ -23,5 +20,11 @@ return array(
      * 2.1.1
      */
     "private_message_text"  => ":name sana yeni bir yol gönderdi <a href=':route'>private message</a>.",
+
+    /*
+     * 4.2.0
+     */
+    "new_mention"           => "New Mention",
+    "new_mention_text"      => ":name mentioned you in ticket #<a href=':route'>:number</a>.",
 
 );
