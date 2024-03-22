@@ -90,7 +90,6 @@ return array(
     "smtp_username"             => "SMTP Kullanıcı Adı",
     "smtp_password"             => "SMTP Parolası",
     "ssl"                       => "SSL",
-    "tls"                       => "TLS",
     "email_content"             => "E-posta İçeriği",
     "email_content_desc"        => "Bu şablon için varsayılan bir konu ve e-posta içeriği girin, şablonu diğer dillerde de yazabilirsiniz. Bir şablon başka bir dilde ayarlanmamışsa, varsayılan verileri kullanır.",
     "outgoing"                  => "Giden",
@@ -361,7 +360,7 @@ return array(
      */
     "enable_ssl_warning"        => "Sayfa doğru yüklenmediğinde bu ayarı etkinleştirin, Lojisoft Destek!",
     "verify_frontend_loads"     => "Lütfen ana sayfa aşağıya doğru yüklendiğinden emin olun.",
-    "twig_operator_signature"   => "{{ operator.signature|raw }} birleştirme alanı çalışma zamanında işleneceğinden önizleme yanlış olabilir.",
+    "twig_operator_reply_template"   => "The {{ operator.reply_template|raw }} merge field will be processed at runtime hence the preview may be incorrect.",
 
     /*
      * 2.4.1
@@ -590,5 +589,76 @@ return array(
     "alternative_description"   => "Alternative description",
     "browse_image"              => "Browse for an image",
     "drop_image"                => "Drop an image here",
+
+    /*
+     * 4.2.0
+     */
+    "keyboard_shortcuts"        => "Keyboard Shortcuts",
+    "enable_keyboard_shortcuts" => "Enable keyboard shortcuts",
+    "shortcut_global"           => "Global shortcuts",
+    "shortcut_toggle"           => "Toggle the keyboard shortcuts dialog",
+    "shortcut_start_search"     => "Start search",
+    "shortcut_goto_new_ticket"  => "Go to the open new ticket page",
+    "shortcut_ticket_view"      => "Ticket view shortcuts",
+    "shortcut_focus_reply"      => "Focus the reply form",
+    "shortcut_focus_notes"      => "Focus the notes form",
+    "shortcut_focus_forward"    => "Focus the forward form",
+    "shortcut_toggle_user_tab"  => "Toggle the user details tab in the sidebar",
+    "shortcut_take_ticket"      => "Take ticket",
+    "shortcut_close_ticket"     => "Close ticket",
+    "shortcut_lock_ticket"      => "Close & lock ticket",
+    "shortcut_unlock_ticket"    => "Unlock ticket",
+    "shortcut_trash_ticket"     => "Move ticket to trash",
+    "shortcut_block_user"       => "Block user and move ticket to trash",
+    "shortcut_watch_ticket"     => "Watch ticket",
+    "shortcut_unwatch_ticket"   => "Unwatch ticket",
+    "shortcut_merge_ticket"     => "Merge ticket",
+    "shortcut_unmerge_ticket"   => "Unmerge ticket",
+    "shortcut_expand_all"       => "Expand all messages",
+    "shortcut_collapse_all"     => "Collapse all messages",
+    "shortcut_print_ticket"     => "Print ticket details and messages",
+
+    /*
+     * 4.3.0
+     */
+    "db_connection_error"       => "Database connection error, please check :path",
+
+    /*
+     * 5.0.0
+     */
+    "favicon_dark_mode"         => "Dark Mode Favicon",
+    "favicon_dark_mode_desc"    => "If your favicon was designed to only work on a light background, set a different favicon for dark mode. This will only be used if your browser and/or operating system is running in dark mode.",
+    "template_mode_system_desc" => "Choosing system will synchronise the template mode to light or dark mode depending on your operating system theme settings.",
+
+    /*
+     * 5.0.1
+     */
+    "starttls_or_none"          => "STARTTLS / None",
+
+    /*
+     * 5.1.0
+     */
+    "email_attempt_at_desc"     => "The email failed to send. Retrying again :time.", // :time example, "in 5 mins"
+    "websockets_connection"     => "Web Sockets Connection",
+    "websockets_not_running"    => "Unable to connect to web socket server.",
+    "search_driver_check"       => "Search Driver",
+    "search_driver_not_working" => "The configured search driver is not working correctly.",
+
+    /*
+     * 5.2.0
+     */
+    "temporary_path"            => "Temporary Path",
+    "temporary_path_desc"       => "The temporary path is used to store files during the update. The system temporary path is used by default. The path must have at least 3GB of free space.",
+    "background_jobs_desc"      => "Below are a list of background jobs that have failed recently.",
+    "failed_jobs"               => "Failed Jobs",
+    "horizon_dashboard"         => "Horizon Dashboard",
+    "job"                       => "Job|Jobs",
+    "job_payload"               => "Job Payload",
+    "job_exception"             => "Job Exception",
+    "failed_at"                 => "Failed At",
+    "queue"                     => "Queue",
+    "exception"                 => "Exception",
+    "data"                      => "Data",
+    "failed_background_jobs"    => "One or more <a target='_blank' href=':link'>background jobs</a> have failed and require manual attention.",
 
 );
