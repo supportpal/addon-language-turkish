@@ -65,12 +65,6 @@ return array(
     "submit_a_ticket"           => "Submit a Ticket",
 
     /*
-     * 2.0.1
-     */
-
-    "post_install"              => "For the system to function properly, a cron job must be set-up. Please read our <a href='https://docs.supportpal.com/current/New+Installation#PostInstallationSteps'>post installation steps</a> for details on this and other recommend actions to improve functionality and security.",
-
-    /*
      * 2.0.2
      */
     "required_requirements"     => "You meet :required of :total required requirements.",
@@ -111,15 +105,12 @@ return array(
     "allow_url_fopen"           => "'allow_url_fopen' Enabled",
     "allow_url_fopen_failure"   => "Enable 'allow_url_fopen' in your php.ini file to use Gravatar and other features.",
     "allowed_methods"           => "HTTP Allowed Methods",
-    "help_allowed_methods"      => "Your web server must permit all of the below HTTP methods. Please check our <a href='https://docs.supportpal.com/current/New+Installation#PostInstallationSteps' target='_blank'>New Installation</a> documentation for more information.",
 
     /*
      * 2.4.0
      */
     "mysql_server_version"      => "Server Version >= :min",
     "mysql_server_version_desc" => "MySQL :min or greater is required to run SupportPal. Found: ':version'.",
-    "mysql_client_version"      => "Client Version >= :min (:mysqlnd_min for MySQLnd)",
-    "mysql_client_version_desc" => "MySQL client version :min or greater (:mysqlnd_min for MySQLnd) is required to run SupportPal. Found: ':version'.",
 
     "upgrade_step"              => "Step :num of :total: ",
     "accept_eula"               => "Accept EULA",
@@ -134,7 +125,6 @@ return array(
      */
     "press_to_begin"            => "Please press the button below to start.",
     "locked"                    => "Install/Upgrade In-Progress",
-    "locked_desc"               => "Detected a lock file (:path).\nPlease check that the installer is not already running.\n\nYou can delete this file when you're certain that another installation or upgrade is not in progress.",
 
     "error_and_empty_database"  => "There was an error. You may need to empty the database before starting again.",
     "login_with_details"        => "You can login using the details specified earlier.",
@@ -192,4 +182,26 @@ return array(
      * 3.7.0
      */
     "troubleshooting_tips"      => "Get troubleshooting tips",
+
+    /*
+     * 4.2.0
+     */
+    "app_manager_version_not_supported" => "App Manager (:version) is not supported.",
+    "running_upgrade"           => "Running app upgrade",
+    "upgrade_complete_success"  => "App upgrade completed successfully.",
+    "app_manager_requires_update" => "Must update app-manager before running helpdesk update. :command",
+
+    /*
+     * 5.0.0
+     */
+    "mysql_client_version"      => "Client Version >= :min (:mysqlnd_min for MySQLnd)",
+    "mysql_client_version_desc" => "MySQL client version :min or greater (:mysqlnd_min for MySQLnd) is required to run SupportPal. Found: ':version'.",
+    "post_install"              => "For the system to function properly, a cron job must be set-up. Please read our <a href='https://docs.supportpal.com/current/New+Installation#PostInstallationSteps'>post installation steps</a> for details on this and other recommend actions to improve functionality and security.",
+    "help_allowed_methods"      => "Your web server must permit all of the below HTTP methods. Please check our <a href='https://docs.supportpal.com/current/New+Installation#PostInstallationSteps' target='_blank'>New Installation</a> documentation for more information.",
+
+    /*
+     * 5.3.0
+     */
+    "check_file_permissions"    => "Checking file permissions...",
+
 );

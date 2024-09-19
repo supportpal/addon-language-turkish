@@ -71,7 +71,6 @@ return array(
     "ticket_tag_removed"                => "Removed tag :new_value from ticket #:rel.",
     "ticket_slaplan_updated"            => "Updated the SLA plan on ticket #:rel from :old_value to :new_value.",
     "ticket_duetime_updated"            => "Updated the due time on ticket #:rel to :new_value.",
-    "ticket_duetime_paused"             => "Paused the due time on ticket #:rel until next user reply.",
     "ticket_customfield_updated"        => "Updated custom fields on ticket #:rel.",
     "ticket_converted_user"             => "Converted internal ticket #:rel to user ticket.",
     "ticket_converted_internal"         => "Converted user ticket #:rel to internal ticket.",
@@ -114,7 +113,6 @@ return array(
      */
     "ticket_brand_disabled_reply"       => "Reply could not be added due to ticket belonging to a disabled brand #:rel.",
     "personal_signatures_updated"       => "Updated personal signatures.",
-    "operator_signatures_updated"       => "Updated :rel's signatures.",
     "check_email_failed"                => "Error: Failed to download email from account :old_value: ':rel'.",
     "ticket_added_cc"                   => "Email(s) :new_value added to CC address list for ticket #:rel.",
     "ticket_removed_cc"                 => "Email(s) :old_value removed from CC address list for ticket #:rel.",
@@ -132,7 +130,6 @@ return array(
     "ticket_macro_applied"              => "The macro ':new_value' was ran on ticket #:rel.",
     "ticket_macro_automatic"            => "The macro ':new_value' automatically ran on ticket #:rel.",
     "email_template_not_found"          => "Email template ID ':new_value' not found, aborted sending email.",
-    "ticket_duetime_unset"              => "Unset the due time on ticket #:rel.",
     "private_conversation_started"      => "Started a conversation with :rel.",
     "private_message_sent"              => "Sent a message to :rel.",
     "not_imported_replies_disabled"     => "An email :extra_rel1 was received for ticket #:rel, but was not imported as ticket email replies are disabled.",
@@ -166,8 +163,6 @@ return array(
     "email_send_failed"                 => "Failed to send email.",
     "ticket_brand_updated"              => "Updated the brand on ticket #:rel from :old_value to :new_value.",
     "export_scheduled"                  => "An export of user :rel has been scheduled.",
-    "export_generated"                  => "Export :new_value of user :rel has been generated and stored on the system.",
-    "export_deleted"                    => "Export :old_value of user :rel has been deleted from the system.",
     "deleted_inactive_records"          => "Automatically deleted :old_value inactive :rel.",
     "deleted_old_records"               => "Automatically deleted old :rel records.",
     "sent_email_to_user_group"          => "Queued email to user group ':new_value' for ticket #:rel.",
@@ -202,5 +197,74 @@ return array(
      * 3.0.0
      */
     "selfservice_article_neutral"       => "Neutrally rated article :rel.",
+
+    /*
+     * 4.1.0
+     */
+    "user_merged"                       => "User :old_value merged into user :rel.",
+    "user_organisation_merged"          => "User organisation :old_value merged into user organisation :rel.",
+
+    /*
+     * 4.2.0
+     */
+    "operator_reply_templates_updated"  => "Updated :rel's reply templates.",
+
+    /*
+     * 5.0.0
+     */
+    "addon_activated"                   => "Activated :item (add-on) :rel.",
+    "addon_deactivated"                 => "Deactivated :item (add-on) :rel.",
+    "addon_installed"                   => "Installed :item (add-on) :rel.",
+    "addon_uninstalled"                 => "Uninstalled :item (add-on) :rel.",
+    "addon_cancelled"                   => "Cancelled :item (add-on) :rel.",
+    "addon_updated"                     => "Updated :item (add-on) :rel to version :new_value.",
+    "ticket_reply_duetime_updated"      => "Updated the reply due time on ticket #:rel to :new_value.",
+    "ticket_resolve_duetime_updated"    => "Updated the resolve due time on ticket #:rel to :new_value.",
+    "ticket_duetime_unset"              => "Unset the due time on ticket #:rel.",
+    "ticket_reply_duetime_unset"        => "Unset the reply due time on ticket #:rel.",
+    "ticket_resolve_duetime_unset"      => "Unset the resolve due time on ticket #:rel.",
+    "ticket_duetime_paused"             => "Paused the due time on ticket #:rel until next user reply.",
+    "ticket_duetime_unpaused"           => "Unpaused the due times on ticket #:rel.",
+    "user_email_verified"               => "Verified their email address.",
+    "marked_email_as_verified"          => "Verified ownership of email address on behalf of user :rel.",
+    "user_invited_to_organisation"      => "User :rel invited to organisation :extra_rel1.",
+    "user_accepted_organisation_invite" => "User :rel accepted invitation to organisation :extra_rel1.",
+    "user_additional_email_verified"    => "Verified an additional email address (:new_value).",
+    "export_generated"                  => "Export :new_value of user :rel has been generated and stored on the system.",
+    "export_deleted"                    => "Export :old_value of user :rel has been deleted from the system.",
+    "user_export_generated"             => "Export :new_value of user :rel has been generated and stored on the system.",
+
+    /*
+     * 5.0.2
+     */
+    "personal_reply_templates_updated"  => "Updated their reply templates.",
+
+    /*
+     * 5.1.0
+     */
+    "ticket_deleted_attachment"         => "Deleted attachment ':old_value' from ticket #:rel.",
+    "user_added_to_group"               => "User :rel added to user group :new_value.",
+    "user_removed_from_group"           => "User :rel removed from user group :old_value.",
+    "operator_added_to_group"           => "Operator :rel added to operator group :new_value.",
+    "operator_removed_from_group"       => "Operator :rel removed from operator group :old_value.",
+
+    /*
+     * 5.2.0
+     */
+    "background_job_deleted"            => "Deleted background job :rel.",
+    "background_job_retried"            => "Retried background job :rel.",
+
+    /*
+     * 5.3.0
+     */
+    "operator_password_set"             => "Set a password for their account.",
+    "password_reset_sent"               => "Reset password link sent to :rel.",
+
+    /*
+     * 5.4.0
+     */
+    "ticket_feedback_rating"            => "Rated ticket #:rel as :extra_rel1.", // Rated ticket #123 as 'general.good / general.bad / general.neutral'.
+    "ticket_feedback_saved"             => "Saved :extra_rel1 on ticket #:rel.", // Saved (lowercase ticket.feedback) on ticket #123
+    "selfservice_feedback_saved"        => "Saved :extra_rel1 on article :rel.", // Saved (lowercase ticket.feedback) on article 'Foo bar'
 
 );
