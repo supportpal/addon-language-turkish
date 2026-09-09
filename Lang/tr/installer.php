@@ -83,9 +83,6 @@ return array(
     "help_php_extensions"       => "PHP extensions differ depending on your server, your host and other system variable. For assistance installing missing extensions, please contact your hosting provider or server administrator.",
     "help_php_settings"         => "For additional assistance, please read <a target=\"_blank\" href=\"https://docs.supportpal.com/current/System+Requirements#PHPSettings\">PHP Settings Help</a>.",
     "disabled_functions"        => "Disabled Functions",
-    "help_mysql_version"        => "For assistance installing a new version of MySQL please contact your hosting provider or server administrator.",
-    "mysql_version"             => "MySQL Version",
-    "mysql_version_not_found"   => "Not available, found MySQL version: :version",
 
     /*
      * 2.1.0
@@ -110,7 +107,6 @@ return array(
      * 2.4.0
      */
     "mysql_server_version"      => "Server Version >= :min",
-    "mysql_server_version_desc" => "MySQL :min or greater is required to run SupportPal. Found: ':version'.",
 
     "upgrade_step"              => "Step :num of :total: ",
     "accept_eula"               => "Accept EULA",
@@ -195,7 +191,6 @@ return array(
      * 5.0.0
      */
     "mysql_client_version"      => "Client Version >= :min (:mysqlnd_min for MySQLnd)",
-    "mysql_client_version_desc" => "MySQL client version :min or greater (:mysqlnd_min for MySQLnd) is required to run SupportPal. Found: ':version'.",
     "post_install"              => "For the system to function properly, a cron job must be set-up. Please read our <a href='https://docs.supportpal.com/current/New+Installation#PostInstallationSteps'>post installation steps</a> for details on this and other recommend actions to improve functionality and security.",
     "help_allowed_methods"      => "Your web server must permit all of the below HTTP methods. Please check our <a href='https://docs.supportpal.com/current/New+Installation#PostInstallationSteps' target='_blank'>New Installation</a> documentation for more information.",
 
@@ -203,5 +198,22 @@ return array(
      * 5.3.0
      */
     "check_file_permissions"    => "Checking file permissions...",
+
+    /*
+     * 6.0.0
+     */
+    "mysql_server_version_desc" => "MySQL :min or greater is required to run SupportPal. Found: ':version'.",
+    "help_mysql_version"        => "For assistance installing a new version of MySQL please contact your hosting provider or server administrator.",
+    "mysql_version"             => "MySQL Version",
+    "mysql_version_not_found"   => "Not available, found MySQL version: :version",
+    "mysql_client_version_desc" => "MySQL client version :min or greater (:mysqlnd_min for MySQLnd) is required to run SupportPal. Found: ':version'.",
+    "update_failed"             => "App update failed.",
+    "attempting_to_restore"     => "Attempting to restore from backup...",
+
+    /*
+     * 6.1.0
+     */
+    "freetype_support"          => "FreeType Support",
+    "upgrade_in_progress"       => "A system upgrade is in progress. The help desk will be unavailable until an administrator completes the upgrade. Please try again later.",
 
 );
