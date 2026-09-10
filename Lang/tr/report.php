@@ -165,4 +165,9 @@ return array(
     "total_tickets_canned_responses_used" => "Total Tickets with Canned Responses Used",
     "operators_most_used_responses"     => "Operators with Most Canned Responses Used",
 
+    /*
+     * 5.7.0
+     */
+    "group_by"                          => "Group by",
+
 );

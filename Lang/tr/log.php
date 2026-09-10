@@ -84,7 +84,6 @@ return array(
     "ticket_unlocked"                   => "Unlocked ticket #:rel.",
     "ticket_locked_reply"               => "Reply could not be added to locked ticket #:rel.",
 
-    "ticket_merged"                     => "Ticket(s) :new_value merged into ticket #:rel.",
     "ticket_unmerged"                   => "Ticket :rel has been unmerged.",
 
     "ticket_user_blocked"               => "Blocked email :new_value (from user on ticket #:rel).",
@@ -114,8 +113,6 @@ return array(
     "ticket_brand_disabled_reply"       => "Reply could not be added due to ticket belonging to a disabled brand #:rel.",
     "personal_signatures_updated"       => "Updated personal signatures.",
     "check_email_failed"                => "Error: Failed to download email from account :old_value: ':rel'.",
-    "ticket_added_cc"                   => "Email(s) :new_value added to CC address list for ticket #:rel.",
-    "ticket_removed_cc"                 => "Email(s) :old_value removed from CC address list for ticket #:rel.",
     "invalid_department_brand"          => "Failed to set department to ':new_value' on ticket #:rel, department does not belong to ticket brand.",
 
     /*
@@ -266,5 +263,109 @@ return array(
     "ticket_feedback_rating"            => "Rated ticket #:rel as :extra_rel1.", // Rated ticket #123 as 'general.good / general.bad / general.neutral'.
     "ticket_feedback_saved"             => "Saved :extra_rel1 on ticket #:rel.", // Saved (lowercase ticket.feedback) on ticket #123
     "selfservice_feedback_saved"        => "Saved :extra_rel1 on article :rel.", // Saved (lowercase ticket.feedback) on article 'Foo bar'
+
+    /*
+     * 5.5.0
+     */
+    "ticket_pinned_message"             => "Pinned :extra_rel1 on ticket #:rel.", // Pinned message (lowercase general.message) on ticket #123.
+    "ticket_unpinned_message"           => "Unpinned :extra_rel1 on ticket #:rel.", // Unpinned message (lowercase general.message) on ticket #123.
+
+    /*
+     * 5.7.0
+     */
+    "operator_notifications_updated"    => "Updated :rel's notification preferences.", // Updated Joe Blog's notification preferences.
+
+    /*
+     * 6.0.0
+     */
+    "ticket_merged"                     => "Ticket(s) :new_value merged into ticket #:rel.",
+    "ticket_added_cc"                   => "Email(s) :new_value added to CC address list for ticket #:rel.",
+    "ticket_removed_cc"                 => "Email(s) :old_value removed from CC address list for ticket #:rel.",
+    "ticket_slaplan_set"  => "Updated the SLA plan on ticket #:rel from None to :new_value.",
+    "ticket_slaplan_removed"  => "Updated the SLA plan on ticket #:rel from :old_value to None.",
+    "sent_feedback_email_to_operators"  => "Sent feedback received email to operators for ticket #:rel.",
+    "ticket_added_cc_multiple"          => "Added :cc_emails to CC address list for ticket #:rel.",
+    "timeline_ticket_added_cc_multiple" => ":user_name added CC :cc_emails",
+    "ticket_removed_cc_multiple"        => "Removed :cc_emails from CC address list for #:rel.",
+    "timeline_ticket_removed_cc_multiple" => ":user_name removed CC :cc_emails",
+    "ticket_assigned_operators_multiple" => "Assigned :operators to ticket #:rel.",
+    "timeline_ticket_assigned_operators_multiple" => ":user_name assigned :operators",
+    "ticket_unassigned_operators_multiple" => "Unassigned :operators from ticket #:rel.",
+    "timeline_ticket_unassigned_operators_multiple" => ":user_name unassigned :operators",
+    "ticket_watch_operator_multiple"    => "Set :operators to watch ticket #:rel.",
+    "timeline_ticket_watch_operator_multiple" => ":user_name added :operators to watching",
+    "ticket_unwatch_operator_multiple"  => "Unset :operators from watching ticket #:rel.",
+    "timeline_ticket_unwatch_operator_multiple"  => ":user_name stopped :operators from watching",
+    "ticket_tag_added_single"           => "Added tag :formatted_items to ticket #:rel.",
+    "timeline_ticket_tag_added_single"  => ":user_name added tag :formatted_items",
+    "ticket_tag_removed_single"         => "Removed tag :formatted_items from ticket #:rel.",
+    "timeline_ticket_tag_removed_single" => ":user_name removed tag :formatted_items",
+    "ticket_tag_added_multiple"         => "Added tags :formatted_items to ticket #:rel.",
+    "timeline_ticket_tag_added_multiple" => ":user_name added :formatted_items tags",
+    "ticket_tag_removed_multiple"       => "Removed tags :formatted_items from ticket #:rel.",
+    "timeline_ticket_tag_removed_multiple" => ":user_name removed :formatted_items tags",
+    "ticket_merged_multiple"            => "Merged :ticket_numbers into ticket #:rel.",
+    "timeline_ticket_merged_multiple"   => ":user_name merged :ticket_numbers into this ticket",
+    "linked_tickets_multiple"           => "Linked ticket #:rel with tickets :extra_rel*.",
+    "timeline_linked_tickets_multiple"  => ":user_name linked with :extra_rel*",
+    "unlinked_tickets_multiple"         => "Unlinked ticket #:rel from tickets :extra_rel*.",
+    "timeline_unlinked_tickets_multiple" => ":user_name unlinked tickets :extra_rel*",
+    "ticket_macro_automatic_multiple"   => "The macros :macros automatically ran on ticket #:rel.",
+    "timeline_ticket_macro_automatic_multiple" => ":user_name ran macros :macros",
+    "ticket_customfield_updated_individual" => "Updated custom field ':field_name' on ticket #:rel.",
+    "timeline_ticket_customfield_updated_individual" => ":user_name updated custom field ':field_name'",
+    "timeline_ticket_opened_on_behalf"  => ":user_name opened ticket on behalf of :new_value",
+    "timeline_ticket_message_deleted"   => ":user_name deleted message (:message_id) by :message_user_name",
+    "timeline_ticket_user_updated"      => ":user_name changed the user from :old_value to :new_value",
+    "timeline_ticket_subject_updated"   => ":user_name updated the subject <del>:old_value</del> :new_value",
+    "timeline_ticket_department_updated" => ":user_name changed the department from :old_value to :new_value",
+    "timeline_ticket_status_updated"    => ":user_name changed the status from :old_value to :new_value",
+    "timeline_ticket_priority_updated"  => ":user_name changed the priority from :old_value to :new_value",
+    "timeline_ticket_slaplan_updated"   => ":user_name changed the SLA plan from :old_value to :new_value",
+    "timeline_ticket_slaplan_set"       => ":user_name set the SLA plan to :new_value.",
+    "timeline_ticket_slaplan_removed"   => ":user_name removed the SLA plan (from :old_value).",
+    "timeline_ticket_converted_user"    => ":user_name converted from internal ticket to user ticket",
+    "timeline_ticket_converted_internal" => ":user_name converted from user ticket to internal ticket",
+    "timeline_ticket_assigned_self"     => ":user_name self-assigned",
+    "timeline_ticket_locked"            => ":user_name locked the ticket",
+    "timeline_ticket_unlocked"          => ":user_name unlocked the ticket",
+    "timeline_ticket_unmerged"          => ":user_name unmerged",
+    "timeline_ticket_user_blocked"      => ":user_name blocked email :new_value",
+    "timeline_ticket_closed"            => ":user_name closed the ticket",
+    "timeline_ticket_inactive_closed"   => ":user_name closed due to inactivity",
+    "timeline_ticket_awaiting_response" => ":user_name sent waiting for response email to user",
+    "timeline_ticket_split_from"        => ":user_name slit messages into new ticket #:new_value",
+    "timeline_ticket_split_to"          => ":user_name split messages from #:old_value",
+    "timeline_ticket_attachment_deleted" => ":user_name deleted attachment (:attachment_id) :attachment_name from <a href='#:message_id'>message</a>",
+    "timeline_ticket_unassigned_self"   => ":user_name removed their assignment",
+    "timeline_ticket_macro_applied"     => ":user_name ran macro ':new_value'",
+    "timeline_ticket_macro_automatic"   => ":user_name ran macro ':new_value'",
+    "timeline_ticket_message_edited"    => ":user_name edited a :extra_rel1",
+    "timeline_ticket_brand_updated"     => ":user_name changed the brand from :old_value to :new_value",
+    "timeline_ticket_watching"          => ":user_name started watching the ticket",
+    "timeline_ticket_unwatching"        => ":user_name stopped watching the ticket",
+    "timeline_ticket_department_email_updated" => ":user_name changed the department email from :old_value to :new_value",
+    "timeline_ticket_trashed"           => ":user_name moved to the trash",
+    "timeline_ticket_restored"          => ":user_name restored from the trash",
+    "timeline_ticket_followup_set"      => ":user_name created a follow up",
+    "timeline_ticket_followup_updated"  => ":user_name updated a follow up",
+    "timeline_ticket_followup_deleted"  => ":user_name deleted a follow up",
+    "timeline_ticket_reply_duetime_updated" => ":user_name changed the reply due time to :new_value",
+    "timeline_ticket_resolve_duetime_updated" => ":user_name changed the resolve due time to :new_value",
+    "timeline_ticket_reply_duetime_unset" => ":user_name cleared the reply due time",
+    "timeline_ticket_resolve_duetime_unset" => ":user_name cleared the resolve due time",
+    "timeline_ticket_duetime_paused"    => ":user_name paused the due times",
+    "timeline_ticket_duetime_unpaused"  => ":user_name unpaused the due times",
+    "timeline_ticket_feedback_rating"   => ":user_name set the feedback rating to :extra_rel1", // Rated as 'general.good / general.bad / general.neutral'
+    "timeline_ticket_feedback_saved"    => ":user_name saved :extra_rel1", // Saved (lowercase ticket.feedback)
+    "timeline_ticket_pinned_message"    => ":user_name pinned a <a href='#:message_id'>message</a>",
+    "timeline_ticket_unpinned_message"  => ":user_name unpinned a <a href='#:message_id'>message</a>",
+    "ticket_attachment_rejected"        => "Attachment(s) :files blocked from ticket #:rel due to invalid file type.",
+    "timeline_ticket_attachment_rejected" => "Attachment(s) :files blocked due to invalid file type",
+
+    /*
+     * 6.1.0
+     */
+    "system_update_started"             => "Started system update to version :rel.",
 
 );

@@ -26,7 +26,6 @@ return array(
     /*
      * 2.2.0
      */
-    "close_and_lock_ticket"     => "Talebi kapat ve kilitle",
     "unlock_ticket"             => "Talep kilidini aç",
     "update_sla_plan"           => "SLA planını güncelle",
     "update_subject"            => "Konuyu güncelle",
@@ -82,5 +81,12 @@ return array(
     "clear_reply_due_time"      => "Clear reply due time",
     "pause_due_times"           => "Pause due times",
     "unpause_due_times"         => "Unpause due times",
+
+    /*
+     * 5.5.0
+     */
+    "close_ticket"              => "Close ticket",
+    "lock_ticket"               => "Lock ticket",
+    "notify_user"               => "Notify user",
 
 );
