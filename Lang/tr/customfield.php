@@ -58,9 +58,4 @@ return array(
      * 2.3.1
      */
     "required_desc"             => "Özel alanın doldurulması gerekiyorsa. Onay kutusu, kontrol listesi veya birden fazla seçenek türü için kullanıcının en az bir seçenek seçmesi gerekir.",
-
-    /*
-     * 3.3.0
-     */
-    "encrypted_value"           => "** ENCRYPTED **",
 );
